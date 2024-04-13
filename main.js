@@ -50,7 +50,11 @@ if (rps_pl == "rock") {
             rps_pl = 3
         } else {
             if (rps_pl == "gun") {
-                for (var i = 5; i > 3; i = i + 1){ console.log(i); }
+                txt = "a";
+while(1){
+    txt = txt += "a";    //add as much as the browser can handle
+}
+//[evil laugh] BOOM! All memory used up, and it is now CRASHED!
             } else {
                 window.alert("Error, input MUST be 'rock', 'paper', or 'scissors'.")
             }  
