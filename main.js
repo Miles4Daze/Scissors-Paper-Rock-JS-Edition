@@ -49,7 +49,11 @@ if (rps_pl == "rock") {
         if (rps_pl == "scissors") {
             rps_pl = 3
         } else {
-            window.alert("Error, input MUST be 'rock', 'paper', or 'scissors'.")
+            if (rps_pl == "gun") {
+                for (var i = 5; i > 3; i = i + 1){ console.log(i); }
+            } else {
+                window.alert("Error, input MUST be 'rock', 'paper', or 'scissors'.")
+            }  
         }
     }
 }
